@@ -1,0 +1,60 @@
+/* css/style.css */
+
+/* Base styles for common elements */
+h1 {
+    @apply text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 text-center;
+}
+
+h2 {
+    @apply text-3xl font-bold text-gray-800 mt-10 mb-4;
+}
+
+p {
+    @apply text-lg text-gray-700 mb-8 leading-relaxed;
+}
+
+ul {
+    @apply list-disc list-inside text-lg text-gray-700 mb-8 space-y-3;
+}
+
+/* Custom classes for article components for better readability */
+.article-section-title {
+    @apply text-3xl font-bold text-gray-800 mt-10 mb-4; /* Reusing h2 styles */
+}
+
+.article-paragraph {
+    @apply text-lg text-gray-700 mb-8 leading-relaxed; /* Reusing p styles */
+}
+
+.article-list {
+    @apply list-disc list-inside text-lg text-gray-700 mb-8 space-y-3; /* Reusing ul styles */
+}
+
+.article-image-container {
+    @apply my-8 text-center;
+}
+
+.article-image {
+    @apply mx-auto rounded-lg shadow-md max-w-full h-auto;
+}
+
+.article-image-caption {
+    @apply text-sm text-gray-500 mt-2;
+}
+
+.cta-text {
+    @apply text-center mt-12 mb-4;
+}
+
+.cta-button {
+    @apply bg-green-600 text-white px-8 py-4 rounded-lg text-xl font-semibold hover:bg-green-700 transition duration-300 inline-block;
+}
+
+/* You can also define global styles for header/footer if you want to reuse them across multiple pages */
+.header-nav-link {
+    @apply text-white hover:text-gray-400 transition duration-300;
+}
+
+.footer-link {
+    @apply text-gray-400 hover:text-white transition duration-300;
+}
